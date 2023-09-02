@@ -15,9 +15,9 @@ const Navbar = () => {
     await searchImages(search)
     setSearch("")
 
-    const el = document.getElementById("heading")
+    // const el = document.getElementById("heading")
 
-    History.window("#el")
+    // History.window("#el")
     
   }
   
