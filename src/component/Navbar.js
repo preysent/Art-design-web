@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import images from "../context/imageContext";
 
 const Navbar = () => {
+  
+  const [search, setSearch]= useState("")
+  const context = useContext(images)
+
+  const { searchImages } = context
+  const onchange = e => setSearch(e.target.value)
+
+  const handleSearch = async(e)=>{
+    
+    e.preventDefault()
+    await searchImages(search)
+    setSearch("")
+
+    const el = document.getElementById("heading")
+
+    History.window("#el")
+    
+  }
+  
+
   return (
     <>
       <header>
@@ -22,10 +43,13 @@ const Navbar = () => {
           <div class="container">
             <h1 class="banner-title">Art Design Blog</h1>
             <p>everything that you want to know about art & design</p>
-            <form>
+            <form onSubmit={handleSearch}>
               <input
                 type="text"
                 class="search-input"
+                id='search'
+                value={search}
+                onChange={onchange}
                 placeholder="find your Interest . . ."
               />
               <button type="submit" class="search-btn">
