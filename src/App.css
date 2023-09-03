@@ -33,6 +33,9 @@ img{
   display: flex;
   justify-content: space-between;
 }
+.head button{
+    background-color: transparent;
+}
 /* header */
 header{
     min-height: 100vh;
