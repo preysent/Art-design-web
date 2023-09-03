@@ -7,15 +7,14 @@ const Bloggrid = () => {
 
   const res = useContext(images)
   const { img } = res
-  console.log(img)
 
   return (
     <>
 
 
       <div id="heading" className="heading">
-        <div class="container">
-          <div class="title">
+        <div className="container">
+          <div className="title">
             <h2>Recent Arts & Designs</h2>
             <p>recent arts & designs on the blog</p>
           </div>
@@ -23,34 +22,38 @@ const Bloggrid = () => {
       </div>
 
 
-      <div class="blog-grid">
+      <div className="blog-grid">
         {
+<<<<<<< HEAD
          img && img.map(ele => <Image key={`${ele.id}`} img={ele} />)
+=======
+          img && img.map(ele => <Image key={`${ele.id}`} img={ele} />)
+>>>>>>> 8eb817dc375365f91558ef30a63913057d8cc2b1
         }
       </div>
 
-      <div class="footer">
-        <div class="footercontainer">
-          <div class="socialicons">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-google-plus"></i></a>
+      <div className="footer">
+        <div className="footercontainer">
+          <div className="socialicons">
+            <a href="https://www.instagram.com/"><i className="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i className="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i className="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i className="fa-brands fa-linkedin"></i></a>
+            <a href="https://plus.google.com/"><i className="fa-brands fa-google-plus"></i></a>
           </div>
-          <div class="footernav">
+          <div className="footernav">
             <ul>
-              <li><a href="" class="magnet">Home</a></li>
-              <li><a href="" class="magnet">About</a></li>
-              <li><a href="" class="magnet">Our Team</a></li>
-              <li><a href="" class="magnet">Contact Us</a></li>
-              <li><a href="" class="magnet">News</a></li>
+              <li><button className="magnet">Home</button></li>
+              <li><button className="magnet">About</button></li>
+              <li><button className="magnet">Our Team</button></li>
+              <li><button className="magnet">Contact Us</button></li>
+              <li><button className="magnet">News</button></li>
             </ul>
           </div>
-          <div class="footerbottom">
+          <div className="footerbottom">
             <p>
               CopyRight &copy; 2023; Designed by
-              <span class="designer">Rushikesh</span>
+              <span className="designer">Rushikesh</span>
             </p>
           </div>
         </div>

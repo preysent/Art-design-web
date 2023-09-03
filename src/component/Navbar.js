@@ -25,34 +25,34 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <nav class="navbar">
-          <div class="container">
+        <nav className="navbar">
+          <div className="container">
             <div className="head">
-              <a href="index.html" class="navbar-brand">
+              <button className="navbar-brand">
                 Logo.Here
-              </a>
-              <div class="navbar-page">
+              </button>
+              <div className="navbar-page">
                 <p>Home</p>
               </div>
             </div>
           </div>
         </nav>
 
-        <div class="banner">
-          <div class="container">
-            <h1 class="banner-title">Art Design Blog</h1>
+        <div className="banner">
+          <div className="container">
+            <h1 className="banner-title">Art Design Blog</h1>
             <p>everything that you want to know about art & design</p>
             <form onSubmit={handleSearch}>
               <input
                 type="text"
-                class="search-input"
+                className="search-input"
                 id='search'
                 value={search}
                 onChange={onchange}
                 placeholder="find your Interest . . ."
               />
-              <button type="submit" class="search-btn">
-                <i class="fas fa-search"></i>
+              <button type="submit" className="search-btn">
+                <i className="fas fa-search"></i>
               </button>
             </form>
           </div>
