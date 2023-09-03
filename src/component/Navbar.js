@@ -32,7 +32,7 @@ const Navbar = () => {
                 Logo.Here
               </button>
               <div className="navbar-page">
-                <p>Home</p>
+                <p>Blogs</p>
               </div>
             </div>
           </div>
