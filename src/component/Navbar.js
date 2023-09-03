@@ -28,9 +28,9 @@ const Navbar = () => {
         <nav className="navbar">
           <div className="container">
             <div className="head">
-              <a href="#" className="navbar-brand">
+              <button className="navbar-brand">
                 Logo.Here
-              </a>
+              </button>
               <div className="navbar-page">
                 <p>Home</p>
                 <p>Blogs</p>
