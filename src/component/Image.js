@@ -12,7 +12,7 @@ const Image = (props) => {
           <div className="post-overlay">
             <h2>{ele.user.first_name}</h2>
             <p>{ele.alt_description}</p>
-            <a href="#">Read More</a>
+            <a href={`${ele.urls.regular}`}>Read More</a>
           </div>
         </div>
     </>
