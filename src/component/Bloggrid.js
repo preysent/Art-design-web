@@ -24,11 +24,9 @@ const Bloggrid = () => {
 
       <div className="blog-grid">
         {
-<<<<<<< HEAD
+
          img && img.map(ele => <Image key={`${ele.id}`} img={ele} />)
-=======
-          img && img.map(ele => <Image key={`${ele.id}`} img={ele} />)
->>>>>>> 8eb817dc375365f91558ef30a63913057d8cc2b1
+
         }
       </div>
 

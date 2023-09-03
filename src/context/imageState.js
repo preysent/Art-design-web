@@ -14,10 +14,6 @@ const ImageState = (props) => {
             }
         })
           
-        console.log(responce)
-
-
-
         const data = await responce.json()
         setImg(data.results)
         return true
