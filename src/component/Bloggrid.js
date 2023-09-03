@@ -39,11 +39,11 @@ const Bloggrid = () => {
           </div>
           <div className="footernav">
             <ul>
-              <li><a href="#" className="magnet">Home</a></li>
-              <li><a href="#" className="magnet">About</a></li>
-              <li><a href="#" className="magnet">Our Team</a></li>
-              <li><a href="#" className="magnet">Contact Us</a></li>
-              <li><a href="#" className="magnet">News</a></li>
+              <li><button className="magnet">Home</button></li>
+              <li><button className="magnet">About</button></li>
+              <li><button className="magnet">Our Team</button></li>
+              <li><button className="magnet">Contact Us</button></li>
+              <li><button className="magnet">News</button></li>
             </ul>
           </div>
           <div className="footerbottom">
