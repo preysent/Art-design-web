@@ -33,7 +33,6 @@ const Navbar = () => {
               </a>
               <div class="navbar-page">
                 <p>Home</p>
-                <p>Blogs</p>
               </div>
             </div>
           </div>

@@ -15,6 +15,11 @@ const ImageState = (props) => {
                 'Authorization': `Client-ID ${process.env.REACT_APP_API_KEY}`
             }
         })
+          
+        console.log(responce)
+
+
+
         const data = await responce.json()
         setImg(data.results)
         console.log(data)
