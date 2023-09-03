@@ -1,4 +1,4 @@
-export default {
+const res = {
   "total": 10000,
   "total_pages": 834,
   "results": [
@@ -2963,3 +2963,5 @@ export default {
     }
   ]
 }
+
+export default res
