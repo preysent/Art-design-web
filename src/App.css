@@ -46,8 +46,12 @@ header{
     justify-content: stretch;
 }
 .navbar{
-    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    background: rgba(0,0,0,.6);
     padding: 1.2rem;
+    position: absolute;
+    width: 100%;
+    top: 5vh;
     
    
 }
