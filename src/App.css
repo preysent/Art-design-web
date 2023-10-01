@@ -19,6 +19,7 @@
 body{
     line-height: 1.4;
     color: var(--dark);
+    background-color: black;
 }
 img{
     width: 100%;
@@ -180,4 +181,38 @@ header{
         display: flex;
         text-align: center;
     }
+
+  }
+@media screen and (max-width: 400px) {
+    .banner{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        width: fit-content;
+    }
+    .banner-title{
+        font-size: 3rem;
+        font-family: var(--Playfair);
+        line-height: 1.2;
+    } 
+    
+    .banner p{
+        padding: 1rem 0 2rem 0;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        font-family: var(--Roboto);
+        font-weight: 300;
+        word-spacing: 2px;
+    }
+    .banner form{
+        background: #fff;
+        border-radius: 2rem;
+        padding: 0.6rem 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
   }

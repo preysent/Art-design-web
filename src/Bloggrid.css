@@ -126,6 +126,7 @@
     transition: 0.5s;
 }
 
+
 .socialicons a i:hover {
     color: white;
     transition: 0.5s;
@@ -162,3 +163,15 @@ hr{
     justify-content: center;
     /* align-items: end; */
 }
+
+@media screen and (max-width: 400px) {
+    .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin-left: -5rem;
+        margin-right: -5rem;
+    }
+    
+  }
